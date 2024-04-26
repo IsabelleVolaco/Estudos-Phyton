@@ -55,3 +55,57 @@ is_insured = True
 if age > 16 and has_permit and is_insured:
     print("Can drive. Os blocos de código serão pulados caso todos os requisitos não sejam cumpridos.")
 
+"""
+Comentários podem ser usados para não exibir parte do código.
+print("este exemplo não irá aparecer")
+
+"""
+#print("e nem esse")
+
+print("Exercício de notas or")
+
+average_grade = "B"
+final_score = 1400
+
+if average_grade == "A" or final_score >= 1500:
+    print("1# Certificate achieved!")
+
+average_grade = "A"
+final_score = 1400
+
+if average_grade == "A" or final_score >= 1500:
+    print("2# Certificate achieved!")
+
+average_grade = "B"
+final_score = 1600
+
+if average_grade == "A" or final_score >= 1500:
+    print("3# Certificate achieved!")
+
+average_grade = "B"
+final_score = 1400
+won_competition = True
+
+if average_grade == "A" or final_score >= 1500 or won_competition:
+    print("4# Certificate achieved!")
+
+average_grade = "B"
+final_score = 1400
+won_competition = False
+
+if average_grade == "A" or final_score >= 1500 and won_competition:
+    print("5# Certificate achieved!")
+
+average_grade = "A"
+final_score = 1400
+won_competition = False
+
+if average_grade == "A" or final_score >= 1500 and won_competition:
+    print("6# Certificate achieved!")
+
+average_grade = "A"
+final_score = 1400
+won_competition = True
+
+if average_grade == "A" or final_score >= 1500 and won_competition:
+    print("7# Certificate achieved!") 
