@@ -66,4 +66,46 @@ for i in range(5):
     print(i)
     print("Exibir 5 vezes.")
 
-#falta ex calculadora de juros
+print ("Exercício calculadora de juros bancários")
+
+valor_inicial = 100
+taxa_de_juros = 0.004
+anos = 3
+contador = 1
+
+while contador <= anos:
+    juros_acumulados = valor_inicial * taxa_de_juros
+    valor_inicial += juros_acumulados
+    print(f"Taxa: {valor_inicial}")
+    contador += 1
+
+valor_inicial = 100
+taxa_de_juros = 0.004
+anos = 3
+
+for i in range(anos):
+    juros_acumulados = valor_inicial * taxa_de_juros
+    valor_inicial += juros_acumulados
+    print(f"Taxa: {valor_inicial}")
+
+
+
+print("Exercício cupom")
+
+base = "netflix.com"
+cupom = "login/cupom"
+desconto = 50
+quantia = 4
+
+for num in range(quantia):
+    print(f"{base}/{cupom}/{desconto}/{num}")
+print(f"{quantia} cupons gerados!")
+
+
+price = 100
+discount = 10
+
+for i in range(2):
+    price = price - discount
+    
+print(f"Discount: {discount} - Price: {price}")
