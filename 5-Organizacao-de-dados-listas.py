@@ -45,3 +45,16 @@ print(nomes)
 hamburguer = ["cheddar","cebola","tomate","alface"]
 remover = hamburguer.pop(2)
 print(hamburguer)
+
+
+
+print("uso de for nas listas")
+
+final_score = [5,3,6,10,8]
+for score in final_score:
+    print(score)
+
+partida = ["juninho", "samanta", "bruno"]
+for jogadores in partida:
+    print(jogadores)
+    print("----")
