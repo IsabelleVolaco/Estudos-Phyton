@@ -26,3 +26,17 @@ print(mercado)
 
 mercado.pop(1)
 print(mercado)
+
+
+
+nomes = ["josué","carlinhos","mario"]
+nomes.append("amanda")
+print(nomes)
+
+nomes = ["josué","carlinhos","mario"]
+nomes.insert(1,"amanda")
+print(nomes)
+
+nomes.pop()
+print(nomes)
+
