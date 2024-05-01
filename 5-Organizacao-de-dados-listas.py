@@ -40,3 +40,8 @@ print(nomes)
 nomes.pop()
 print(nomes)
 
+
+
+hamburguer = ["cheddar","cebola","tomate","alface"]
+remover = hamburguer.pop(2)
+print(hamburguer)
