@@ -58,3 +58,16 @@ partida = ["juninho", "samanta", "bruno"]
 for jogadores in partida:
     print(jogadores)
     print("----")
+
+
+
+print("exercicios instruções e if")
+
+users = ["Sarah","Mike","Ella"]
+print(len(users))
+
+number_of_users = len(users)
+print(number_of_users)
+
+if len(users) > 2:
+    print("é maior que 2")
