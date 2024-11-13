@@ -48,3 +48,40 @@ print(kilometers)
 miles = [100, 57, 40, 20]
 km = [value * 1609 for value in miles]
 print(miles)
+
+
+
+answers = [True, False, False] 
+opposite = []
+for answer in answers:
+    opposite.append(not answer)
+print(opposite) #maior, mesmo resultado
+
+
+answers = [True, False, False] 
+print([not answer for answer in answers]) #resumido, mesmo resultado
+
+
+
+
+
+
+expiry_years = [2018, 2020, 2019]
+renewed = [year + 4 for year in expiry_years]
+print(renewed)
+
+
+
+
+
+
+ages = [15, 20, 19]
+can_drive = [age >= 18 for age in ages]
+print(can_drive)
+
+
+
+
+ages = [15, 20, 19]
+can_drive = [age > 17 for age in ages]
+print(can_drive)
