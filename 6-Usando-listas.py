@@ -380,3 +380,25 @@ ratings = [3, 4, 2, 5, 1, 5, 4, 5]
 print(ratings[-1:2:-2])
 
 
+
+
+print("Exercício questionário automatizado")
+
+answers = ["C","B","C","A","D","A","B","D","D","C"]
+responses = ["C","B","C","A","D","A","B","D","D","C"]
+
+if responses[-1] == answers[len(responses)-1]:
+    correct = True
+else:
+    correct = False
+    
+if not correct:
+    del responses [-1]
+    print("Sorry! Try the last question again.")
+elif len(responses) < len(answers):
+    print('Quiz not complete.')
+    correct = str(len(responses))
+    print("You've got" + correct + "answers correct so far, please continue.")
+else:
+    print("Well done! You have completed the quiz.")
+    
