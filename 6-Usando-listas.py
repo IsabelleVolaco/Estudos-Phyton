@@ -82,6 +82,54 @@ print(can_drive)
 
 
 
+
+results = [3.12, 8.2, 7]
+corrected = [result + 1 for result in results]
+print(corrected)
+
+
+
+
+
+
+prices = [10, 38, 40, 58, 62]
+prices_copy = [price for price in prices] #aqui foi criada uma cópia da lista PRICES ao utilizar o [price for price] sem outras alterações.
+print(prices_copy)
+
+
+
+meters = [100, 3800, 4000]
+meters_copy = [m for m in meters] #aqui foi criada uma cópia da lista METERS ao utilizar o [m for m] sem outras alterações.
+print(meters)
+print(meters_copy)
+
+
+
+
+
+
+
+names = ["Winchester", "Masters", "John"]
+prefixed = ["Mr." + name for name in names]
+print(prefixed)
+
+
+
+
+
+
+
+
+
+words = ["apple", "aligator", "abracadabra", "avatar"]
+a_count = [word.count("a") for word in words]
+print(a_count)
+
+
+
+
+
+
 ages = [15, 20, 19]
 can_drive = [age > 17 for age in ages]
 print(can_drive)
