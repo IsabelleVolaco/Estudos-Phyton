@@ -280,5 +280,32 @@ print(users)
 
 
 
+print("Exercício indexação e exclusão negativa - usando DEL")
+
+winners = ["John", "Ellen", "Sigmund", "Olaf"]
+del winners[-1]
+print(winners)
+
+
+# Ao printar letters ocorrerá um erro, pois letters foi deletada.
+"""
+letters = {'a', 'b', 'c'}
+del letters
+print(letters)
+"""
+
+
+product = {'category': 'book',
+           'price': 4.99,
+           'in_shop': True
+}
+del product["in_shop"]
+print(product)
+
+
+orders = ['A', 'B', 'C']
+del orders[-1]
+print(orders)
+
 
 
