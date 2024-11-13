@@ -147,3 +147,81 @@ def halve(num):
 halved = [halve(price) for price in prices]
 print(halved)
 
+
+# retirando o imposto antes de reduzir o preço pela metade
+prices = [10, 22, 30, 40, 58, 60]
+def halve(num):
+    no_tax = 0.85 * num
+    return no_tax/2
+
+halved = [halve(price) for price in prices]
+print(halved)
+
+
+
+
+
+
+authors = ["Virginia Wolf", "Stephen King"]
+
+def add_comma(name):
+    parts = name.split(" ")
+    return parts[1] + ", " + parts[0]
+
+authors_update = [add_comma(name) for name in authors]
+print(authors_update)
+
+
+
+
+
+
+
+
+
+
+words = ["apple", "aligator", "abracadabra", "avatar"]
+
+def has_double_a(word):
+    count = word.count("a")
+    return count == 2
+
+double_a = [has_double_a(word) for word in words]
+print(double_a)
+
+
+
+
+
+
+
+
+
+scores = [40, 12, 83]
+
+def passed(score):
+    with_bonus = score + 10
+    return with_bonus > 90
+
+passing_scores = [passed(score) for score in scores]
+print(passing_scores)
+
+
+
+
+
+
+
+
+
+scores = [156, 70, 100]
+
+def passed(score):
+    with_bonus = score + 10
+    passed = with_bonus > 90
+    return passed
+
+passing_scores = [passed(score) for score in scores]
+print(passing_scores)
+
+
