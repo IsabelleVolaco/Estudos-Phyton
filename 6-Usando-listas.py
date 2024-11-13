@@ -22,7 +22,6 @@ print(halved)
 
 
 
-
 flights = ["1122", "5788", "0044"]
 
 codes_a = ["BA" + flight for flight in flights]
@@ -33,10 +32,6 @@ for flight in flights:
     code = "BA" + flight
     codes_b.append(code)
 print(codes_b)
-
-
-
-
 
 
 
@@ -64,14 +59,9 @@ print([not answer for answer in answers]) #resumido, mesmo resultado
 
 
 
-
-
 expiry_years = [2018, 2020, 2019]
 renewed = [year + 4 for year in expiry_years]
 print(renewed)
-
-
-
 
 
 
@@ -81,14 +71,9 @@ print(can_drive)
 
 
 
-
-
 results = [3.12, 8.2, 7]
 corrected = [result + 1 for result in results]
 print(corrected)
-
-
-
 
 
 
@@ -105,17 +90,9 @@ print(meters_copy)
 
 
 
-
-
-
-
 names = ["Winchester", "Masters", "John"]
 prefixed = ["Mr." + name for name in names]
 print(prefixed)
-
-
-
-
 
 
 
@@ -126,12 +103,9 @@ print(a_count)
 
 
 
-
-
 ages = [15, 20, 19]
 can_drive = [age > 17 for age in ages]
 print(can_drive)
-
 
 
 
@@ -160,8 +134,6 @@ print(halved)
 
 
 
-
-
 authors = ["Virginia Wolf", "Stephen King"]
 
 def add_comma(name):
@@ -170,10 +142,6 @@ def add_comma(name):
 
 authors_update = [add_comma(name) for name in authors]
 print(authors_update)
-
-
-
-
 
 
 
@@ -191,9 +159,6 @@ print(double_a)
 
 
 
-
-
-
 scores = [40, 12, 83]
 
 def passed(score):
@@ -202,9 +167,6 @@ def passed(score):
 
 passing_scores = [passed(score) for score in scores]
 print(passing_scores)
-
-
-
 
 
 
@@ -227,19 +189,15 @@ print(passing_scores)
 
 print("Exercício filtrando com expressões if")
 
-
 scores = [12, 47, 30, 29, 19, 35]
 high_scores = [score for score in scores if score > 20] #a nova lista irá conter somente os elementos filtrados (maiores que 20).
 print(high_scores)
 
 
 
-
 prices = [150, 45, 200, 340]
 apply_taxes = [price for price in prices if price > 150]
 print(apply_taxes)
-
-
 
 
 
@@ -250,12 +208,9 @@ print(under_50)
 
 
 
-
-
 humidity = [40, 35, 20, 70]
 too_low = [level for level in humidity if level < 30]
 print(too_low)
-
 
 
 
@@ -269,13 +224,9 @@ print(ideal)
 
 
 
-
-
 websites = ["nytimes.com", "lemonde.fr", "economist.com"]
 french = [website for website in websites if website.count(".fr") > 0]
 print(french)
-
-
 
 
 
@@ -285,6 +236,46 @@ books_2010 = [code for code in book_codes if code.count("2010") == 1]
 print(books_2010)
 
 
+
+print("Exercício indexação e exclusão negativa")
+
+scores = [4.5, 5, 3, 4, 3.5, 4]
+latest = scores[-1]
+print(latest)
+
+
+users = ["Tony", "Tina", "Tom"]
+last = users[-1]
+print(last)
+
+
+ratings = [4, 5, 3, 1, 2, 3]
+first = ratings[-6]
+print(first)
+
+
+# Ocorrerá um erro se for tentado recuperar um valor em uma posição fora do alcance do objeto.
+"""     
+results = ["Win", "Loss", "Draw"]
+results[-5]
+"""
+
+
+user = ("Joe", "Paris", 27)
+name = user[0]
+age = user[-1]
+message = f"{name} {age}"
+print(message)
+
+
+
+members = ["Anna", "Sarah", "Hayley", "Gareth"]
+print(members[-3])
+
+
+users = ["Peter", "Julia", "Irina"]
+users[-1] = "Paul"
+print(users)
 
 
 
