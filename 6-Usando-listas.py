@@ -309,3 +309,74 @@ print(orders)
 
 
 
+
+
+print("Exercício slicing pt. I")
+#sintaxe [start:stop]
+
+ingredients = ["eggs", "flour", "sugar", "salt"] #start no mesmo indíce, stop no indíce anterior ao escolhido.
+print(ingredients[0:2]) #start no indíce 0(eggs), será printado eggs; stop no indíce 2(sugar), mas será printado o indíce 1(flour).
+
+
+letters = ["A","B","C","D","E"]
+print(letters[4:]) #printado apenas 'E' pois iniciou em 4, e foi para -1, ambos equivalentes a 'E'.
+print(letters[1:]) #printado todos menos 'A', pois iniciou em 'B', e foi para -1, deixando 0('A') de fora
+print(letters[3:])
+
+
+users = ["Alan", "Beth", "Carla", "Dennis"]
+print(users[0:]) #printado todos pois foi de 0 a -1, de Alan a Dennis.
+print(users[:]) #igual ao anterior.
+print(users[-2:])
+
+
+#especificar um intervalo fora do comprimento da lista resultará em uma lista vazia.
+letters = ["A", "B", "C", "D", "E"]
+print(letters[6:])
+
+
+scores = [50, 40, 30, 20, 10]
+print(scores[:2])
+print(scores[2:4])
+
+
+#um índice start depois do indíce stop no formato [start:stop] resultará em uma lista vazia.
+animals = ['antelope', 'bear', 'cat', 'dog']
+print(animals[3:0])
+
+
+
+print("Exercício slicing pt. II")
+#sintaxe [start:stop:step]
+
+alphabet = ["A","B","C","D","E","F"]
+print(alphabet[1:6:2]) #O resultado será B, D, F, pois começará em B, pulará dois indíces (step +2) imprimindo em D, pulando mais dois indíces (repetição step +2) até chegar no stop em 6(id.5 'F').
+
+
+friends = ["Anna", "Bella", "Carrie", "Diana", "Eleanor"]
+print(friends[::2]) #A resposta será essa pois inicia no id.0, step +2 até o id.2, step +2 até o id.4 o qual é a casa final para o stop 0(id.-1).
+
+
+flowers = ["azaelea", "buttercup", "rose", "daffodil"] 
+print(flowers[2::-1]) #a resposta será 2,1,0 pois tem start em id.2 (rose), imprime o step -1 (antehorário pois é negativo) até o id.1(butter.) e stop em 0(azaelea). 
+print(flowers[:3:2]) # 0,2 pois start em id.0, step +2 até id.2 que é a casa stop requerida.
+
+
+friends = ["Anna", "Bella", "Carrie", "Diana", "Eleanor"]
+print(friends[3:0:-1]) #start em 3, dando step -1 e imprimindo até chegar no id.1 pois o stop é o 0.
+
+
+scores = [100, 200, 300, 400, 500]
+print(scores[0:2:-1]) #Resulta em uma lista vazia pois não há indíces correspondentes.
+print(scores[4:1:-1])
+
+
+countdown = ["3", "pause", "2", "pause", "1"]
+numbers_only = countdown[::2]
+print(numbers_only)
+
+
+ratings = [3, 4, 2, 5, 1, 5, 4, 5]
+print(ratings[-1:2:-2])
+
+
