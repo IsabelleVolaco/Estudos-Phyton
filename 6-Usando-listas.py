@@ -119,8 +119,6 @@ print(prefixed)
 
 
 
-
-
 words = ["apple", "aligator", "abracadabra", "avatar"]
 a_count = [word.count("a") for word in words]
 print(a_count)
@@ -133,3 +131,19 @@ print(a_count)
 ages = [15, 20, 19]
 can_drive = [age > 17 for age in ages]
 print(can_drive)
+
+
+
+
+
+
+print("Exercício criação de listas em funções - funções como expressões")
+
+
+prices = [10, 22, 30, 40, 58, 62]
+def halve(num):
+    return num/2
+
+halved = [halve(price) for price in prices]
+print(halved)
+
