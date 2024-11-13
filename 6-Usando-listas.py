@@ -1,6 +1,5 @@
 print("Exercício criação de listas antes/depois")
 
-
 prices = [10, 38, 40, 58, 62]
 halved =[]
 
@@ -16,10 +15,6 @@ halved = [price/2 for price in prices]
 print(halved)
 
 #Uma criação de listas é uma maneira de criar uma nova lista como HALVED aplicando uma expressão em cada elemento de outra lista, como PRICES.
-
-
-
-
 
 
 flights = ["1122", "5788", "0044"]
@@ -109,8 +104,7 @@ print(can_drive)
 
 
 
-
-
+#------------------------------------------------------------
 print("Exercício criação de listas em funções - funções como expressões")
 
 
@@ -184,9 +178,7 @@ print(passing_scores)
 
 
 
-
-
-
+#------------------------------------------------------------
 print("Exercício filtrando com expressões if")
 
 scores = [12, 47, 30, 29, 19, 35]
@@ -194,11 +186,9 @@ high_scores = [score for score in scores if score > 20] #a nova lista irá conte
 print(high_scores)
 
 
-
 prices = [150, 45, 200, 340]
 apply_taxes = [price for price in prices if price > 150]
 print(apply_taxes)
-
 
 
 item_prices = [120, 25, 40]
@@ -206,14 +196,9 @@ under_50 = [price for price in item_prices if price < 50]
 print(under_50)
 
 
-
-
 humidity = [40, 35, 20, 70]
 too_low = [level for level in humidity if level < 30]
 print(too_low)
-
-
-
 
 
 humidity_percent = [40, 35, 20, 70]
@@ -221,14 +206,9 @@ ideal = [level for level in humidity_percent if level >= 30 and level <= 50]
 print(ideal)
 
 
-
-
-
 websites = ["nytimes.com", "lemonde.fr", "economist.com"]
 french = [website for website in websites if website.count(".fr") > 0]
 print(french)
-
-
 
 
 book_codes = ["FH2010", "BV1999", "LB2010"]
@@ -236,7 +216,7 @@ books_2010 = [code for code in book_codes if code.count("2010") == 1]
 print(books_2010)
 
 
-
+#------------------------------------------------------------
 print("Exercício indexação e exclusão negativa")
 
 scores = [4.5, 5, 3, 4, 3.5, 4]
@@ -279,7 +259,7 @@ print(users)
 
 
 
-
+#------------------------------------------------------------
 print("Exercício indexação e exclusão negativa - usando DEL")
 
 winners = ["John", "Ellen", "Sigmund", "Olaf"]
@@ -310,7 +290,7 @@ print(orders)
 
 
 
-
+#------------------------------------------------------------
 print("Exercício slicing pt. I")
 #sintaxe [start:stop]
 
@@ -345,7 +325,7 @@ animals = ['antelope', 'bear', 'cat', 'dog']
 print(animals[3:0])
 
 
-
+#------------------------------------------------------------
 print("Exercício slicing pt. II")
 #sintaxe [start:stop:step]
 
@@ -381,7 +361,7 @@ print(ratings[-1:2:-2])
 
 
 
-
+#------------------------------------------------------------
 print("Exercício questionário automatizado")
 
 answers = ["C","B","C","A","D","A","B","D","D","C"]
@@ -402,3 +382,36 @@ elif len(responses) < len(answers):
 else:
     print("Well done! You have completed the quiz.")
     
+
+
+
+#------------------------------------------------------------
+print("Exercício priorizador de atividades")
+
+hobbies = ["Achery","Bowling","Singing","Dancing","Cooking","Flute","Gym"]
+
+while hobbies[-1] != "Dancing":
+    del hobbies[-1]
+
+number = str(len(hobbies))
+print("These are your" + number + "favourite hobbies:")
+print(hobbies)
+
+extras = ["Games","Cinema","Restaurants","Paint","Cofee","Netflix","Bingo"]
+
+costs = [50,20,80,30,40,10,25]
+to_save = 100
+savings = 0
+
+while to_save > 0:
+    to_save -= costs[-1]
+    savings += costs[-1]
+    del costs[-1]
+    del extras[-1]
+    
+savings = str(savings)
+print("You'll save " + savings + " euros by sticking to these extras:")
+print(extras)
+
+next_saving = extras[-1]
+print('If you need to save more, take some time off ' + next_saving + '.')
