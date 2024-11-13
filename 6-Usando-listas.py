@@ -178,8 +178,6 @@ print(authors_update)
 
 
 
-
-
 words = ["apple", "aligator", "abracadabra", "avatar"]
 
 def has_double_a(word):
@@ -188,7 +186,6 @@ def has_double_a(word):
 
 double_a = [has_double_a(word) for word in words]
 print(double_a)
-
 
 
 
@@ -213,7 +210,6 @@ print(passing_scores)
 
 
 
-
 scores = [156, 70, 100]
 
 def passed(score):
@@ -223,5 +219,75 @@ def passed(score):
 
 passing_scores = [passed(score) for score in scores]
 print(passing_scores)
+
+
+
+
+
+
+print("Exercício filtrando com expressões if")
+
+
+scores = [12, 47, 30, 29, 19, 35]
+high_scores = [score for score in scores if score > 20] #a nova lista irá conter somente os elementos filtrados (maiores que 20).
+print(high_scores)
+
+
+
+
+prices = [150, 45, 200, 340]
+apply_taxes = [price for price in prices if price > 150]
+print(apply_taxes)
+
+
+
+
+
+item_prices = [120, 25, 40]
+under_50 = [price for price in item_prices if price < 50]
+print(under_50)
+
+
+
+
+
+
+humidity = [40, 35, 20, 70]
+too_low = [level for level in humidity if level < 30]
+print(too_low)
+
+
+
+
+
+
+humidity_percent = [40, 35, 20, 70]
+ideal = [level for level in humidity_percent if level >= 30 and level <= 50]
+print(ideal)
+
+
+
+
+
+
+
+websites = ["nytimes.com", "lemonde.fr", "economist.com"]
+french = [website for website in websites if website.count(".fr") > 0]
+print(french)
+
+
+
+
+
+
+book_codes = ["FH2010", "BV1999", "LB2010"]
+books_2010 = [code for code in book_codes if code.count("2010") == 1]
+print(books_2010)
+
+
+
+
+
+
 
 
