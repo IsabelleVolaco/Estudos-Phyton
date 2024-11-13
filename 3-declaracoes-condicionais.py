@@ -6,6 +6,7 @@ if user_added == False:
 else:
     print(f"Database has user {user}")
 
+#------------------------------------------------
 print("Exercício Uber")
 
 ride_type = "Black"
@@ -25,6 +26,7 @@ if credits > 0:
     final_price = ride_price - credits
 print(f"Credit applied! Final price: {final_price}")
 
+#------------------------------------------------
 print("Exercício de pontos")
 
 minimum_points = 150
@@ -34,6 +36,7 @@ if data_points >= minimum_points:
 if data_points < minimum_points:
     print(f"Você não tem pontos o suficiente! Faltam {minimum_points - data_points} pontos.")
 
+#------------------------------------------------
 print("Exercícios de permissão")
 
 age = 17
@@ -62,6 +65,7 @@ print("este exemplo não irá aparecer")
 """
 #print("e nem esse")
 
+#------------------------------------------------
 print("Exercício de notas or")
 
 average_grade = "B"
