@@ -1,3 +1,4 @@
+#---------------------------------------------------
 print(" Exercício split")
 
 new_users = "Jon Alex Ann"
@@ -12,6 +13,8 @@ mercado = "batata, queijo, papel higiênico, ovo"
 itens = mercado.split(", ")
 print(itens)
 
+
+#---------------------------------------------------
 print("Exercício replace")
 
 special = "Today'special is pasta"
@@ -28,7 +31,7 @@ Junho = "As vendas de Junho foram um sucesso"
 Julho = Junho.replace("Junho","Julho")
 print(Julho)
 
-
+#---------------------------------------------------
 print("Exercício calculadora de gorjetas")
 
 conta = 20
@@ -38,3 +41,24 @@ gorjeta = conta * gorjeta_porcentagem
 taxa = conta * taxa_porcentagem
 total = conta + gorjeta + taxa
 print(f"Gorjeta: {gorjeta}. Taxa: {taxa}. Total: {total}.")
+
+#---------------------------------------------------
+print("Exercício conversão DNA para RNA")
+
+sequencias = "tatgctttcc#tataggtctg#ctattcaatg"
+lista_dna = sequencias.split("#")
+
+for dna in lista_dna:
+    rna = dna.replace("t","u")
+    print(f"DNA: {dna} ---> RNA: {rna}")
+
+
+
+
+batata = "queijo, queijo, queijo, feijão e arroz"
+batatafodase = batata.replace("queijo","ovo",2)
+print(batatafodase)
+
+batata = "queijo, queijo, queijo, feijão e arroz"
+batatafodase = batata.replace("queijo, ","",2)
+print(batatafodase)
