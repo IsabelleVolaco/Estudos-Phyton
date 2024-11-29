@@ -1,0 +1,14 @@
+print(" Exercício split")
+
+new_users = "Jon Alex Ann"
+user_list = new_users.split()
+print(user_list)
+
+mercado = "batata, queijo, papel higiênico, ovo"
+itens = mercado.split(",")
+print(itens)
+
+mercado = "batata, queijo, papel higiênico, ovo"
+itens = mercado.split(", ")
+print(itens)
+
