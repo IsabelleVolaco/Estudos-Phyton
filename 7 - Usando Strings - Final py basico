@@ -12,3 +12,29 @@ mercado = "batata, queijo, papel higiênico, ovo"
 itens = mercado.split(", ")
 print(itens)
 
+print("Exercício replace")
+
+special = "Today'special is pasta"
+new_special = special.replace("pasta","hamburguer")
+print(new_special)
+
+special = "Today'special is pasta"
+special = special.replace("pasta","hamburguer")
+print(special)
+
+
+
+Junho = "As vendas de Junho foram um sucesso"
+Julho = Junho.replace("Junho","Julho")
+print(Julho)
+
+
+print("Exercício calculadora de gorjetas")
+
+conta = 20
+gorjeta_porcentagem = 0.15
+taxa_porcentagem = 0.067
+gorjeta = conta * gorjeta_porcentagem
+taxa = conta * taxa_porcentagem
+total = conta + gorjeta + taxa
+print(f"Gorjeta: {gorjeta}. Taxa: {taxa}. Total: {total}.")
